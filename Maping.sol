@@ -14,6 +14,10 @@ contract MyContract {
 
      function addPersonMap(string memory firstname , string memory lastname) public{
         peopleMap[peopleCount] = Person(peopleCount,firstname,lastname);
+         incrementCounter();
+    }
+
+    function incrementCounter(){
         peopleCount++;
     }
 }
